@@ -310,7 +310,7 @@ export default function Header() {
                   className={`py-2 block ${
                     pathname === "/" ? "text-[#059473]" : "text-slate-600"
                   } `}
-                  to={""}
+                  to={"/"}
                 >
                   Home
                 </Link>
