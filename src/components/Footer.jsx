@@ -13,14 +13,14 @@ export default function Footer() {
       (state) => state.card,
     );
     const navigate = useNavigate();
-    const dipsatch = useDispatch()
+    const dispatch = useDispatch()
 
     useEffect(() => {
-        if(userInfo){
-          dipsatch(get_wishlist_products(userInfo.id))
-          dipsatch(get_card_products(userInfo.id))
+        if (userInfo) {
+          dispatch(get_wishlist_products(userInfo.id));
+          dispatch(get_card_products(userInfo.id));
         }
-      },[dipsatch,userInfo.id,userInfo])
+      }, [dispatch, userInfo]);
 
   return (
     <footer className="bg-[#f3f6fa]">

@@ -25,7 +25,7 @@ export default function Header() {
     (state) => state.card,
   );
   const navigate = useNavigate();
-  const dipsatch = useDispatch()
+  const dispatch = useDispatch()
 
 
   const { pathname } = useLocation();
@@ -48,11 +48,11 @@ export default function Header() {
   };
 
   useEffect(() => {
-    if(userInfo){
-      dipsatch(get_wishlist_products(userInfo.id))
-      dipsatch(get_card_products(userInfo.id))
+    if (userInfo) {
+      dispatch(get_wishlist_products(userInfo.id));
+      dispatch(get_card_products(userInfo.id));
     }
-  },[dipsatch,userInfo.id,userInfo])
+  }, [dispatch, userInfo]);
 
   return (
     <div className="w-full bg-white">
