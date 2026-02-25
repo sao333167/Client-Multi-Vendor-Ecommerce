@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 export default function Reviews({product}) {
   const { userInfo } = useSelector((state) => state.auth);
   const { errorMessage, successMessage,reviews,totalReview,rating_review } = useSelector((state) => state.home);
-  const [parPage, setParPage] = useState(10);
+  const parPage = 10;
   const [pageNumber, setPageNumber] = useState(1);
   const [rate, setRate] = useState("");
   const [rev, setRev] = useState("");

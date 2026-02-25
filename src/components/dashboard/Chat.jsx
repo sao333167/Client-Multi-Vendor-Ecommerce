@@ -81,7 +81,7 @@ export default function Chat() {
         if(sellerId === receverMessage.senderId && userInfo.id ===  receverMessage.receverId){
             dispatch(updateMessage(receverMessage))
         }else {
-            toast.success(receverMessage.senderName + " " + "Send A Message" )
+            toast.success(`${receverMessage.senderName} Send A Message`)
             dispatch(messageClear())
         }
     } 

@@ -18,7 +18,7 @@ import {
 } from "../store/Reducers/homeReducerSlice";
 
 export default function SearchProducts() {
-    let [searchParams, setSearchParams] = useSearchParams();
+    let [searchParams] = useSearchParams();
     const category = searchParams.get("category");
     const searchValue = searchParams.get("value");
 

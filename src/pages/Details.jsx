@@ -10,7 +10,7 @@ import { FaFacebookF, FaHeart } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import Description from "./../components/Description";
+// import Description from "./../components/Description";
 import Reviews from "../components/Reviews";
 
 // import Swiper and modules styles

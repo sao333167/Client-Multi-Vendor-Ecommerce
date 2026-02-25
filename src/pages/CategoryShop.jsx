@@ -19,7 +19,7 @@ import {
 } from "../store/Reducers/homeReducerSlice";
 
 export default function CategoryShop() {
-    let [searchParams, setSearchParams] = useSearchParams();
+    let [searchParams] = useSearchParams();
     const category = searchParams.get("category");
 
     const dispatch = useDispatch();

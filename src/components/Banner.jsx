@@ -9,7 +9,7 @@ import { get_banners } from '../store/Reducers/homeReducerSlice'
 export default function Banner() {
 
     const dispatch = useDispatch()
-    const {banners,loader} = useSelector(state => state.home)
+    const {banners} = useSelector(state => state.home)
 
 
     const responsive ={
