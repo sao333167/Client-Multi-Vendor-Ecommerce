@@ -1,6 +1,6 @@
 import axios from "axios";
 const local = 'http://localhost:5000'
-const production = 'https://backend-multi-vendor-ecommerce-2.onrender.com'
+const production = process.env.REACT_APP_SOCKET_URL
 
 let api_url = ''
 let mode = 'pro'
@@ -13,7 +13,8 @@ if (mode === 'pro') {
 
 
 const api = axios.create({
-    baseURL : `${api_url}/api`
+    baseURL : `${api_url}/api`,
+    withCredentials: true
 })
 
 

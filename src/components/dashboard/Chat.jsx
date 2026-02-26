@@ -11,10 +11,9 @@ import {
     updateMessage,
 } from "../../store/Reducers/chatReducerSlice";
 import toast from "react-hot-toast";
-import io from "socket.io-client";
 import {FaList} from 'react-icons/fa'
+import { socket } from "../../utils/utils";
 
-const socket = io("http://localhost:5000");
 
 export default function Chat() {
 
